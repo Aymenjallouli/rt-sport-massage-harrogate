@@ -1,0 +1,1102 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RT Sport Massage, sports massage therapist in Harrogate</title>
+<meta name="description" content="Sports massage, cupping, hot stone and lymphatic drainage with Rene Taylor at 49 Electric Avenue, Harrogate. Rated 5.0 from 295 Google reviews.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RT Sport Massage, sports massage therapist in Harrogate">
+<meta property="og:description" content="Sports massage, cupping, hot stone and lymphatic drainage with Rene Taylor at 49 Electric Avenue, Harrogate. Rated 5.0 from 295 Google reviews.">
+<meta name="theme-color" content="#1F2447">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231F2447'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='27' font-style='italic' text-anchor='middle' fill='%23D2AA62'%3ERT%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "RT Sport Massage",
+  "description": "Sports massage therapist in Harrogate, run by Rene Taylor.",
+  "telephone": "+447961586984",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "49 Electric Ave",
+    "addressLocality": "Harrogate",
+    "postalCode": "HG1 2BB",
+    "addressCountry": "GB"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 54.0055603, "longitude": -1.5528583 },
+  "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJFXNTvKVTeUgReavKoN5ZwLw",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Wednesday", "Thursday"], "opens": "09:15", "closes": "20:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "09:15", "closes": "15:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:15", "closes": "18:00" }
+  ],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": "https://www.fresha.com/a/rene-taylor-harrogate-uk-49-electric-avenue-mpnyfnnc"
+  }
+}
+</script>
+<style>
+/* ==========================================================================
+   RT Sport Massage — design decisions
+   PALETTE  Lifted from Rene's own photos: warm plaster walls of the studio
+            (bg / surface), the charcoal-navy blankets (ink), the deep navy of
+            her printed gift voucher (brand) and the brass candle lids + gold
+            voucher script (accent). Calm and clinical-warm; no gradients.
+            One strong colour move: the navy proof band with a gold 5.0.
+   TYPE     Instrument Serif (roman + italic) for an unhurried editorial
+            display voice; Instrument Sans 400/600 for crisp, sporty UI/body.
+   HERO     Split editorial: an oversized three-beat headline built from what
+            reviews repeat (assessment → massage → stretches) beside a framed
+            portrait of Rene in her studio. Mobile puts promise, rating, CTA
+            in the first screen; the portrait follows.
+   RHYTHM   light hero → navy proof + review rail → light numbered steps →
+            stone price list → light studio → stone vouchers → light visit →
+            navy booking close. Asymmetric 7/5 splits, hairline rules rather
+            than card grids, one oversized moment per band.
+   ========================================================================== */
+:root {
+  --bg: #F4F1EB;
+  --surface: #E9E4DA;
+  --ink: #191B2A;
+  --ink-soft: #545766;
+  --brand: #1F2447;
+  --brand-2: #2A3060;
+  --brand-ink: #F4F1EB;
+  --accent: #D2AA62;
+  --accent-ink: #7A571B;
+  --line: rgba(25, 27, 42, .14);
+  --line-strong: rgba(25, 27, 42, .32);
+  --line-light: rgba(244, 241, 235, .18);
+
+  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --font-body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --step--1: clamp(0.875rem, 0.85rem + 0.12vw, 0.9375rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.45vw, 1.45rem);
+  --step-2: clamp(1.45rem, 1.25rem + 0.9vw, 1.95rem);
+  --step-3: clamp(1.9rem, 1.5rem + 1.8vw, 3rem);
+  --step-4: clamp(2.6rem, 1.6rem + 4.4vw, 5.25rem);
+  --step-5: clamp(4.5rem, 2.6rem + 9vw, 10rem);
+
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px; --space-5: 24px;
+  --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px;
+  --section: clamp(56px, 10vw, 128px);
+  --gutter: clamp(16px, 5vw, 40px);
+  --header-h: 64px;
+
+  --radius-s: 10px; --radius-m: 20px; --radius-pill: 999px;
+  --shadow-1: 0 1px 2px rgba(25, 27, 42, .06), 0 2px 8px rgba(25, 27, 42, .05);
+  --shadow-2: 0 2px 4px rgba(25, 27, 42, .06), 0 14px 32px -10px rgba(25, 27, 42, .22);
+  --shadow-3: 0 4px 10px rgba(25, 27, 42, .08), 0 36px 70px -24px rgba(25, 27, 42, .45);
+
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: var(--step-0); line-height: 1.6;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  padding-bottom: calc(68px + env(safe-area-inset-bottom));
+}
+body.menu-open { overflow: hidden; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3 { margin: 0; font-family: var(--font-display); font-weight: 400; text-wrap: balance; }
+h2 { font-size: var(--step-3); line-height: 1.08; letter-spacing: -0.012em; }
+h3 { font-size: var(--step-2); line-height: 1.15; }
+p { margin: 0; text-wrap: pretty; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+em { font-style: italic; }
+svg { flex: none; }
+.icon { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 3px; border-radius: 4px; }
+.on-dark :focus-visible { outline-color: var(--accent); }
+section[id], [id].anchor { scroll-margin-top: calc(var(--header-h) + 12px); }
+
+.skip {
+  position: fixed; left: var(--space-4); top: var(--space-3); z-index: 100;
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--space-5);
+  background: var(--brand); color: var(--brand-ink); border-radius: var(--radius-pill);
+  font-weight: 600; text-decoration: none; transform: translateY(-160%);
+}
+.skip:focus { transform: none; }
+
+.wrap { max-width: calc(1200px + 2 * var(--gutter)); margin-inline: auto; padding-inline: var(--gutter); }
+.section { padding-block: var(--section); }
+.eyebrow {
+  display: flex; align-items: center; gap: var(--space-3);
+  font-size: var(--step--1); font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink);
+}
+.eyebrow::before { content: ""; width: 28px; height: 1px; background: currentColor; }
+.on-dark .eyebrow { color: var(--accent); }
+.lead { font-size: var(--step-1); line-height: 1.5; color: var(--ink-soft); max-width: 36ch; }
+.measure { max-width: 64ch; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.soft { color: var(--ink-soft); }
+.nowrap { white-space: nowrap; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-3);
+  min-height: 52px; padding: 0 var(--space-5); border-radius: var(--radius-pill);
+  font: 600 var(--step-0)/1.1 var(--font-body); text-decoration: none; text-align: center;
+  border: 1px solid transparent; cursor: pointer; transition: transform .25s var(--ease);
+}
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+.btn--primary { background: var(--brand); color: var(--brand-ink); box-shadow: var(--shadow-2); }
+.btn--primary:hover { background: var(--brand-2); }
+.btn--ghost { border-color: var(--line-strong); color: var(--ink); background: transparent; }
+.btn--ghost:hover { background: rgba(25, 27, 42, .05); }
+.btn--gold { background: var(--accent); color: var(--ink); }
+.btn--gold:hover { background: #DDB876; }
+.btn--light { border-color: var(--line-light); color: var(--brand-ink); }
+.btn--light:hover { background: rgba(244, 241, 235, .08); }
+.btn .icon { width: 18px; height: 18px; }
+
+.link-arrow {
+  display: inline-flex; align-items: center; gap: var(--space-2); min-height: 44px;
+  font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 5px;
+}
+.link-arrow .icon { width: 16px; height: 16px; transition: transform .25s var(--ease); }
+.link-arrow:hover .icon { transform: translate(2px, -2px); }
+
+.stars { display: inline-flex; gap: 2px; color: var(--accent); }
+.stars svg { width: 16px; height: 16px; fill: currentColor; }
+
+/* Header */
+.site-header {
+  position: sticky; top: 0; z-index: 60; background: var(--bg);
+  border-bottom: 1px solid transparent;
+}
+.site-header.is-scrolled { border-bottom-color: var(--line); }
+.header__bar { display: flex; align-items: center; gap: var(--space-3); height: var(--header-h); }
+.brand { display: inline-flex; align-items: center; gap: var(--space-3); min-height: 44px; text-decoration: none; margin-right: auto; }
+.brand__mark {
+  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
+  background: var(--brand); color: var(--accent);
+  font: italic 400 1.25rem/1 var(--font-display); letter-spacing: .02em; padding-top: 2px;
+}
+.brand__name { font-weight: 600; font-size: 1.0625rem; letter-spacing: -0.01em; line-height: 1.1; white-space: nowrap; }
+.brand__name small { display: none; font-weight: 400; font-size: .8125rem; color: var(--ink-soft); letter-spacing: 0; }
+.sm-hide { display: none; }
+.nav { display: none; }
+.header__book { min-height: 44px; padding: 0 var(--space-4); font-size: .9375rem; box-shadow: none; }
+.menu-btn {
+  display: grid; place-items: center; width: 48px; height: 48px; margin-right: -8px;
+  border: 0; background: transparent; color: var(--ink); border-radius: var(--radius-s); cursor: pointer;
+}
+.menu-btn .icon { width: 24px; height: 24px; }
+.menu-btn .i-close { display: none; }
+.menu-btn[aria-expanded="true"] .i-open { display: none; }
+.menu-btn[aria-expanded="true"] .i-close { display: block; }
+
+.menu {
+  position: fixed; inset: var(--header-h) 0 0 0; z-index: 55; background: var(--bg);
+  padding: var(--space-6) var(--gutter) calc(var(--space-7) + env(safe-area-inset-bottom));
+  display: flex; flex-direction: column; gap: var(--space-6); overflow-y: auto;
+  opacity: 0; transform: translateY(-8px); visibility: hidden;
+  transition: opacity .3s var(--ease), transform .3s var(--ease), visibility 0s .3s;
+}
+.menu.is-open { opacity: 1; transform: none; visibility: visible; transition: opacity .3s var(--ease), transform .3s var(--ease); }
+.menu ul { border-top: 1px solid var(--line); }
+.menu li a {
+  display: flex; align-items: center; justify-content: space-between; min-height: 64px;
+  border-bottom: 1px solid var(--line); text-decoration: none;
+  font: 400 var(--step-3)/1 var(--font-display);
+}
+.menu li a .icon { width: 20px; height: 20px; color: var(--accent-ink); }
+.menu__cta { display: grid; gap: var(--space-3); }
+.menu__meta { color: var(--ink-soft); font-size: var(--step--1); }
+
+/* Hero */
+.hero { padding-block: var(--space-5) var(--section); }
+.hero__text .eyebrow { margin-bottom: calc(-1 * var(--space-2)); }
+.hero__grid { display: grid; gap: var(--space-7); }
+.hero__text { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-5); }
+.hero__title {
+  font-size: clamp(2.5rem, 1.55rem + 4.6vw, 4.75rem); line-height: 1.02; letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.hero__title span, .hero__title em { display: block; }
+.hero__title em { color: var(--accent-ink); }
+.hero__lead { max-width: 40ch; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); width: 100%; }
+.hero__actions .btn { flex: 1 1 0; padding-inline: var(--space-4); }
+.hero__meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-4); }
+.chip {
+  display: inline-flex; align-items: center; gap: var(--space-2); min-height: 44px; padding: 0 var(--space-4) 0 var(--space-3);
+  border-radius: var(--radius-pill); background: #fff; box-shadow: var(--shadow-1);
+  text-decoration: none; font-weight: 600; font-size: .9375rem;
+}
+.chip .stars svg { width: 15px; height: 15px; }
+.chip__sep { width: 1px; height: 16px; background: var(--line-strong); }
+.chip span:last-child { font-weight: 400; color: var(--ink-soft); }
+.status { display: inline-flex; align-items: center; gap: var(--space-2); font-size: .9375rem; color: var(--ink-soft); }
+.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #9A9AA3; flex: none; }
+.status[data-open="true"]::before { background: #2F8F5B; box-shadow: 0 0 0 4px rgba(47, 143, 91, .16); }
+.status strong { color: var(--ink); font-weight: 600; }
+
+.hero__media { position: relative; margin: 0; }
+.hero__frame { overflow: hidden; border-radius: var(--radius-m); box-shadow: var(--shadow-3); aspect-ratio: 4 / 5; background: var(--surface); }
+.hero__frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+.hero__media figcaption {
+  position: absolute; left: var(--space-4); bottom: var(--space-4); right: var(--space-4);
+  display: flex; flex-direction: column; gap: 2px; width: fit-content; max-width: calc(100% - 2 * var(--space-4));
+  padding: var(--space-3) var(--space-4); border-radius: var(--radius-s); background: var(--bg); box-shadow: var(--shadow-2);
+  font-size: var(--step--1); line-height: 1.35; color: var(--ink-soft);
+}
+.hero__media figcaption strong { color: var(--ink); font-size: 1rem; }
+@media (prefers-reduced-motion: no-preference) {
+  .hero__frame img { animation: settle 1.6s var(--ease) both; }
+  @keyframes settle { from { transform: scale(1.07); } to { transform: scale(1); } }
+}
+
+/* Proof (navy band) */
+.proof { background: var(--brand); color: var(--brand-ink); overflow: hidden; }
+.proof__head { display: grid; gap: var(--space-6); align-items: end; }
+.proof__head h2 { max-width: 16ch; }
+.proof__head h2 em { color: var(--accent); }
+.score { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--space-4) var(--space-5); }
+.score__link { flex-basis: 100%; }
+.score__num {
+  font: 400 var(--step-5)/.8 var(--font-display); letter-spacing: -0.04em; color: var(--accent);
+}
+.score__side { display: grid; gap: var(--space-2); padding-bottom: var(--space-1); }
+.score__side .stars svg { width: 20px; height: 20px; }
+.score__count { font-size: var(--step-1); line-height: 1.25; }
+.score__count strong { font-weight: 600; font-variant-numeric: tabular-nums; }
+.score__link { color: var(--brand-ink); }
+
+.rail-wrap { margin-top: var(--space-8); }
+.rail {
+  display: grid; grid-auto-flow: column; grid-auto-columns: min(86%, 380px); gap: var(--space-4);
+  overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory;
+  margin-inline: calc(-1 * var(--gutter)); padding: var(--space-1) var(--gutter) var(--space-4);
+  scroll-padding-inline: var(--gutter); scrollbar-width: none;
+}
+.rail::-webkit-scrollbar { display: none; }
+.rail:focus-visible { outline-offset: -2px; }
+.rail > li { display: flex; scroll-snap-align: start; }
+.review {
+  flex: 1; display: flex; flex-direction: column; gap: var(--space-4); margin: 0;
+  padding: var(--space-6) var(--space-5) var(--space-5); border-radius: var(--radius-m);
+  background: var(--brand-2); border: 1px solid var(--line-light);
+}
+.review blockquote { margin: 0; flex: 1; }
+.review blockquote p { font-size: var(--step-0); line-height: 1.6; color: rgba(244, 241, 235, .92); }
+.review figcaption { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); padding-top: var(--space-4); border-top: 1px solid var(--line-light); }
+.review figcaption strong { font-weight: 600; }
+.review figcaption span { font-size: var(--step--1); color: rgba(244, 241, 235, .7); }
+.rail__foot { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); margin-top: var(--space-5); }
+.rail__foot p { font-size: var(--step--1); color: rgba(244, 241, 235, .75); }
+.rail__nav { display: flex; gap: var(--space-2); }
+.rail__btn {
+  display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%;
+  border: 1px solid var(--line-light); background: transparent; color: var(--brand-ink); cursor: pointer;
+  transition: opacity .2s var(--ease), transform .2s var(--ease);
+}
+.rail__btn:hover { transform: scale(1.06); }
+.rail__btn:disabled { opacity: .35; cursor: default; transform: none; }
+
+/* Session steps */
+.session__grid { display: grid; gap: var(--space-7); }
+.session__head { display: grid; gap: var(--space-4); align-content: start; }
+.steps { counter-reset: step; border-top: 1px solid var(--line); }
+.step { display: grid; grid-template-columns: auto 1fr; gap: var(--space-2) var(--space-5); padding-block: var(--space-6); border-bottom: 1px solid var(--line); }
+.step__num { grid-row: span 3; font: italic 400 var(--step-3)/1 var(--font-display); color: var(--accent-ink); min-width: 1.6em; }
+.step h3 { font-size: var(--step-2); }
+.step p { color: var(--ink-soft); }
+.step blockquote { margin: var(--space-2) 0 0; padding-left: var(--space-4); border-left: 2px solid var(--accent); }
+.step blockquote p { font: italic 400 var(--step-1)/1.4 var(--font-display); color: var(--ink); }
+.step blockquote footer { margin-top: var(--space-2); font-size: var(--step--1); color: var(--ink-soft); }
+
+/* Treatments */
+.treatments { background: var(--surface); }
+.treat__grid { display: grid; gap: var(--space-7); }
+.treat__head { display: grid; gap: var(--space-5); align-content: start; }
+.treat__photo { margin: 0; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-4); align-items: end; }
+.treat__photo .frame { aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-m); background: var(--bg); }
+.treat__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.treat__photo figcaption { font-size: var(--step--1); color: var(--ink-soft); padding-bottom: var(--space-1); }
+.prices { border-top: 1px solid var(--line-strong); }
+.price {
+  display: grid; grid-template-columns: 1fr auto; gap: var(--space-1) var(--space-4); align-items: baseline;
+  padding-block: var(--space-5); border-bottom: 1px solid var(--line);
+}
+.price h3 { font-size: var(--step-2); line-height: 1.1; }
+.price__dur { grid-column: 1; font-size: var(--step--1); color: var(--ink-soft); display: inline-flex; align-items: center; gap: var(--space-2); }
+.price__dur .icon { width: 15px; height: 15px; }
+.price__cost { grid-column: 2; grid-row: 1 / span 2; align-self: center; text-align: right; font: 400 var(--step-2)/1 var(--font-display); white-space: nowrap; }
+.price__cost small { display: block; font: 600 .75rem/1.4 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); }
+.price__quote { grid-column: 1 / -1; margin-top: var(--space-2); font: italic 400 var(--step-1)/1.35 var(--font-display); color: var(--accent-ink); }
+.price__quote span { font: 400 var(--step--1) var(--font-body); color: var(--ink-soft); font-style: normal; }
+.treat__foot { display: grid; gap: var(--space-5); margin-top: var(--space-6); }
+.techniques { padding: var(--space-5); border-radius: var(--radius-m); background: var(--bg); }
+.techniques h3 { font: 600 var(--step--1)/1.4 var(--font-body); letter-spacing: .12em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: var(--space-3); }
+.tags { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.tags li { padding: 6px 14px; border: 1px solid var(--line-strong); border-radius: var(--radius-pill); font-size: .9375rem; }
+
+/* Studio / Rene */
+.studio__grid { display: grid; gap: var(--space-7); }
+.studio__photo { margin: 0; position: relative; }
+.studio__photo .frame { aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius-m); box-shadow: var(--shadow-2); }
+.studio__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 55% 60%; }
+.studio__text { display: grid; gap: var(--space-5); align-content: start; }
+.quals { display: grid; gap: 0; border-top: 1px solid var(--line); }
+.quals li { display: flex; gap: var(--space-3); align-items: flex-start; padding-block: var(--space-3); border-bottom: 1px solid var(--line); }
+.quals .icon { width: 18px; height: 18px; margin-top: 4px; color: var(--accent-ink); }
+.fresha {
+  display: flex; gap: var(--space-4); align-items: center; padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-m); background: var(--surface);
+}
+.fresha__num { font: 400 var(--step-3)/1 var(--font-display); color: var(--brand); }
+.fresha p:last-child { font-size: .9375rem; line-height: 1.45; color: var(--ink-soft); }
+
+/* Vouchers */
+.vouchers { background: var(--surface); }
+.voucher__grid { display: grid; gap: var(--space-7); align-items: center; }
+.voucher__photo { margin: 0; }
+.voucher__photo .frame { aspect-ratio: 1 / 1; overflow: hidden; border-radius: var(--radius-m); box-shadow: var(--shadow-2); max-width: 440px; }
+.voucher__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 64%; }
+.voucher__text { display: grid; gap: var(--space-5); justify-items: start; }
+
+/* Visit */
+.visit__head { display: grid; gap: var(--space-4); margin-bottom: var(--space-7); }
+.visit__head h2 { font-size: var(--step-4); line-height: 1; letter-spacing: -0.02em; }
+.visit__grid { display: grid; gap: var(--space-6); }
+.visit__grid > * { min-width: 0; }
+.hours { padding: var(--space-4); border-radius: var(--radius-m); background: #fff; box-shadow: var(--shadow-1); }
+.hours__top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-4); }
+.hours__top h3 { font-size: var(--step-2); }
+.hours table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.hours th, .hours td { padding: var(--space-3) var(--space-2); vertical-align: top; border-top: 1px solid var(--line); text-align: left; font-weight: 400; }
+.hours td { text-align: right; white-space: nowrap; }
+.hours tr.is-closed td { color: var(--ink-soft); }
+.hours tr.is-today { background: var(--bg); }
+.hours tr.is-today th, .hours tr.is-today td { font-weight: 600; color: var(--ink); }
+.hours tr.is-today th::after { content: "Today"; display: block; width: fit-content; margin-top: 4px; padding: 1px 8px; border-radius: var(--radius-pill); background: var(--brand); color: var(--brand-ink); font-size: .75rem; font-weight: 600; vertical-align: 2px; }
+.hours__note { margin-top: var(--space-4); font-size: .9375rem; color: var(--ink-soft); }
+.visit__info { display: grid; gap: var(--space-5); }
+.addr { display: flex; gap: var(--space-3); align-items: flex-start; }
+.addr .icon { margin-top: 4px; color: var(--accent-ink); }
+.visit__actions { display: grid; gap: var(--space-3); }
+.map { display: grid; gap: var(--space-3); }
+.map__frame { aspect-ratio: 4 / 3; border-radius: var(--radius-m); overflow: hidden; background: var(--surface); box-shadow: var(--shadow-1); }
+.map__frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+.map p { font-size: var(--step--1); color: var(--ink-soft); }
+
+/* Booking close */
+.book { background: var(--brand); color: var(--brand-ink); }
+.book__grid { display: grid; gap: var(--space-7); }
+.book h2 { font-size: var(--step-4); line-height: 1; letter-spacing: -0.02em; }
+.book h2 em { color: var(--accent); }
+.book__lead { color: rgba(244, 241, 235, .82); max-width: 44ch; font-size: var(--step-1); line-height: 1.5; }
+.book__phone {
+  display: inline-flex; flex-direction: column; gap: var(--space-1); min-height: 44px; text-decoration: none;
+  font: 400 var(--step-4)/1 var(--font-display); letter-spacing: -0.02em; color: var(--brand-ink); margin-bottom: var(--space-3);
+}
+.book__phone small { font: 600 var(--step--1)/1.4 var(--font-body); letter-spacing: .12em; margin-bottom: var(--space-2); text-transform: uppercase; color: var(--accent); }
+.book__actions { display: grid; gap: var(--space-3); align-content: start; }
+
+/* Footer */
+.site-footer { background: var(--surface); padding-block: var(--space-8) var(--space-6); font-size: .9375rem; }
+.footer__grid { display: grid; gap: var(--space-6); }
+.footer__nav ul { display: flex; flex-wrap: wrap; gap: 0 var(--space-5); }
+.footer__nav a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; font-weight: 600; }
+.footer__nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.footer__contact { display: grid; gap: var(--space-1); color: var(--ink-soft); }
+.footer__contact a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font-weight: 600; text-decoration: none; }
+.footer__base { margin-top: var(--space-7); padding-top: var(--space-5); border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-3); color: var(--ink-soft); font-size: var(--step--1); }
+
+/* Sticky action bar (mobile) */
+.actionbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  background: var(--brand); color: var(--brand-ink);
+  padding-bottom: env(safe-area-inset-bottom);
+  box-shadow: 0 -8px 24px -12px rgba(25, 27, 42, .45);
+}
+.actionbar a {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+  min-height: 60px; text-decoration: none; font-size: .875rem; font-weight: 600;
+}
+.actionbar a + a { border-left: 1px solid var(--line-light); }
+.actionbar .icon { color: var(--accent); width: 20px; height: 20px; }
+
+/* Reveal */
+.js .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.js .reveal.is-in { opacity: 1; transform: none; }
+
+@media (max-width: 359px) {
+  .header__book { display: none; }
+}
+
+@media (min-width: 640px) {
+  .brand__name small { display: block; }
+  .sm-hide { display: inline; }
+  .hero__actions { width: auto; }
+  .hero__actions .btn { flex: 0 0 auto; padding-inline: var(--space-5); }
+  .book__actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .book__phone { grid-column: 1 / -1; }
+  .quals { grid-template-columns: 1fr 1fr; column-gap: var(--space-5); }
+  .hours { padding: var(--space-5); }
+  .hours tr.is-today th::after { display: inline-block; margin: 0 0 0 var(--space-2); vertical-align: 2px; }
+  .voucher__grid { grid-template-columns: 5fr 7fr; }
+  .voucher__photo .frame { aspect-ratio: 19 / 25; }
+  .voucher__photo img { object-position: 50% 50%; }
+  .visit__actions { display: flex; flex-wrap: wrap; }
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+  .hero__frame { aspect-ratio: 4 / 3; }
+  .hero__frame img { object-position: 50% 28%; }
+}
+
+@media (min-width: 768px) {
+  body { padding-bottom: 0; }
+  .actionbar { display: none; }
+  .visit__grid { grid-template-columns: 5fr 7fr; align-items: start; }
+  .map__frame { aspect-ratio: auto; height: 100%; min-height: 460px; }
+  .map { grid-template-rows: 1fr auto; height: 100%; }
+}
+
+@media (min-width: 960px) {
+  :root { --header-h: 76px; }
+  .nav { display: flex; align-items: center; gap: var(--space-1); margin-right: var(--space-4); }
+  .nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--space-3); text-decoration: none; font-weight: 600; font-size: .9375rem; border-radius: var(--radius-s); }
+  .nav a:hover { background: rgba(25, 27, 42, .05); }
+  .nav .nav__tel { font-weight: 400; color: var(--ink-soft); }
+  .menu-btn, .menu { display: none; }
+  .header__book { min-height: 48px; padding: 0 var(--space-5); }
+
+  .hero { padding-top: var(--space-7); }
+  .hero__grid { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--space-6); align-items: center; }
+  .hero__text { grid-column: 1 / span 7; gap: var(--space-5); }
+  .hero__title { margin-bottom: var(--space-2); }
+  .hero__media { grid-column: 8 / span 5; }
+  .hero__frame { max-height: calc(100svh - var(--header-h) - 120px); min-height: 440px; }
+  .hero__media::before {
+    content: ""; position: absolute; inset: 22px -22px -22px 22px; border: 1px solid var(--accent);
+    border-radius: var(--radius-m); z-index: -1;
+  }
+  .hero__media figcaption { left: calc(-1 * var(--space-7)); bottom: var(--space-7); }
+
+  .proof__head { grid-template-columns: 7fr 5fr; }
+  .score { justify-content: flex-end; }
+  .score__link { flex-basis: auto; margin-left: calc(var(--space-5) + 1px); }
+
+  .session__grid { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--space-6); }
+  .session__head { grid-column: 1 / span 4; align-self: start; position: sticky; top: calc(var(--header-h) + var(--space-6)); }
+  .steps { grid-column: 6 / span 7; }
+  .step { grid-template-columns: 96px 1fr; padding-block: var(--space-7); }
+  .step__num { font-size: var(--step-4); }
+
+  .treat__grid { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--space-6); }
+  .treat__head { grid-column: 1 / span 5; grid-template-columns: 1fr; align-self: start; gap: var(--space-7); }
+  .treat__photo { grid-template-columns: 1fr; max-width: 400px; }
+  .treat__photo figcaption { padding: 0; }
+  .treat__list { grid-column: 7 / span 6; }
+
+  .studio__grid { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--space-6); align-items: center; }
+  .studio__photo { grid-column: 1 / span 7; }
+  .studio__text { grid-column: 8 / span 5; }
+  .quals { grid-template-columns: 1fr; }
+
+  .voucher__grid { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--space-6); }
+  .voucher__photo { grid-column: 2 / span 4; }
+  .voucher__text { grid-column: 7 / span 5; }
+
+  .visit__head { grid-template-columns: 7fr 5fr; align-items: end; }
+
+  .book__grid { grid-template-columns: 7fr 5fr; align-items: end; gap: var(--space-8); }
+  .footer__grid { grid-template-columns: 4fr 3fr 5fr; align-items: start; }
+  .footer__nav ul { justify-content: flex-end; }
+}
+
+@media (min-width: 1200px) {
+  .studio__photo { margin-left: calc(-1 * max(var(--gutter), (100vw - 1200px) / 2)); }
+  .studio__photo .frame { border-radius: 0 var(--radius-m) var(--radius-m) 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .js .reveal { opacity: 1; transform: none; }
+}
+</style>
+<!--sf:preview--><meta name="robots" content="noindex, nofollow"><!--/sf:preview-->
+<!--sf:og--><meta property="og:image" content="https://rt-sport-massage-harrogate.aymenjallouli.dev/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://rt-sport-massage-harrogate.aymenjallouli.dev/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://rt-sport-massage-harrogate.aymenjallouli.dev/og.jpg"><!--/sf:og-->
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3.5l2 5-2.5 1.5a11 11 0 0 0 5.5 5.5l1.5-2.5 5 2V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 14.5a2 2 0 0 1-2 2H8l-5 4V5.5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 12.5h5"/></symbol>
+  <symbol id="i-nav" viewBox="0 0 24 24"><path d="M3 11 21 3l-8 18-2-8z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.2a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3.5" y="8" width="17" height="4" rx="1"/><path d="M5 12v8.5h14V12M12 8v12.5M12 8S10.5 3.5 8 4.2C6 4.8 7 8 12 8zm0 0s1.5-4.5 4-3.8C18 4.8 17 8 12 8z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="header">
+  <div class="wrap header__bar">
+    <a class="brand" href="#top" aria-label="RT Sport Massage, back to top">
+      <span class="brand__mark" aria-hidden="true">RT</span>
+      <span class="brand__name">RT Sport Massage<small>Harrogate</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#reviews">Reviews</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#studio">Rene</a>
+      <a href="#visit">Hours &amp; map</a>
+      <a class="nav__tel" href="tel:+447961586984">07961 586984</a>
+    </nav>
+    <a class="btn btn--primary header__book" href="https://www.fresha.com/a/rene-taylor-harrogate-uk-49-electric-avenue-mpnyfnnc" target="_blank" rel="noopener"><span>Book<span class="sm-hide">&nbsp;online</span></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+      <svg class="icon i-open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="icon i-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+  <div class="menu" id="menu" aria-label="Menu">
+    <ul>
+      <li><a href="#reviews">Reviews <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a href="#session">A session with Rene <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a href="#treatments">Treatments &amp; prices <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a href="#studio">Rene &amp; the studio <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a href="#vouchers">Gift vouchers <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a href="#visit">Hours &amp; map <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+    </ul>
+    <div class="menu__cta">
+      <a class="btn btn--primary" href="https://www.fresha.com/a/rene-taylor-harrogate-uk-49-electric-avenue-mpnyfnnc" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Book online on Fresha</a>
+      <a class="btn btn--ghost" href="tel:+447961586984"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call 07961 586984</a>
+    </div>
+    <p class="menu__meta">49 Electric Ave, Harrogate, HG1 2BB</p>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <p class="eyebrow">Sports massage · Harrogate</p>
+        <h1 class="hero__title" id="hero-title"><span>Assessed first.</span> <span>Massaged properly.</span> <em>Sent home with stretches.</em></h1>
+        <p class="lead hero__lead">Rene Taylor asks about your problem areas and checks your posture before she starts. Sport massage, cupping and hot stone at RT Sport Massage, Electric Avenue.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://www.fresha.com/a/rene-taylor-harrogate-uk-49-electric-avenue-mpnyfnnc" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Book online</a>
+          <a class="btn btn--ghost" href="tel:+447961586984"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>Call<span class="sm-hide">&nbsp;07961 586984</span></span></a>
+        </div>
+        <div class="hero__meta">
+          <a class="chip" href="https://www.google.com/maps/place/?q=place_id:ChIJFXNTvKVTeUgReavKoN5ZwLw" target="_blank" rel="noopener" aria-label="Rated 5.0 out of 5 from 295 Google reviews, read them on Google">
+            <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+            <span>5.0</span><span class="chip__sep" aria-hidden="true"></span><span>295 Google reviews</span>
+          </a>
+          <p class="status" data-status hidden></p>
+        </div>
+      </div>
+      <figure class="hero__media">
+        <div class="hero__frame">
+          <img src="assets/photos/photo-02.jpg" width="1179" height="1441" fetchpriority="high" alt="Rene Taylor standing in her treatment room behind the massage table, with cupping sets and oils on a trolley beside her">
+        </div>
+        <figcaption><strong>Rene Taylor</strong>Sport massage therapist, in her studio</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Proof -->
+  <section class="proof section on-dark" id="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <div class="proof__head">
+        <div class="reveal">
+          <p class="eyebrow">Google reviews</p>
+          <h2 id="reviews-title" style="margin-top: var(--space-4)">The word her clients reach for most is <em>knowledgeable</em>.</h2>
+        </div>
+        <div class="score reveal">
+          <p class="score__num" aria-hidden="true">5.0</p>
+          <div class="score__side">
+            <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+            <p class="score__count"><span class="sr-only">Rated 5.0 out of 5 from </span><strong data-count="295">295</strong> Google reviews</p>
+          </div>
+          <a class="link-arrow score__link" href="https://www.google.com/maps/place/?q=place_id:ChIJFXNTvKVTeUgReavKoN5ZwLw" target="_blank" rel="noopener">Read all 295 reviews on Google<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+        </div>
+      </div>
+
+      <div class="rail-wrap reveal">
+        <ul class="rail" id="rail" tabindex="0" aria-label="Google reviews of RT Sport Massage, scroll sideways for more">
+          <li><figure class="review">
+            <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+            <blockquote><p>“…I went with a lot of pain in my neck and shoulder (after a muscle strain while out running) and it feels so much better since the hour session with Rene. She was very friendly and knowledgeable and gave me stretches and posture tips to help afterwards too…”</p></blockquote>
+            <figcaption><strong>Rosie H.</strong><span>Google review</span></figcaption>
+          </figure></li>
+          <li><figure class="review">
+            <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+            <blockquote><p>“…I've had quite a few sports massages over the years. Rene is certainly one of the best. … The massage was great, firm enough to loosen my muscle tension but without being painful or uncomfortable…”</p></blockquote>
+            <figcaption><strong>Jamie B.</strong><span>Google review</span></figcaption>
+          </figure></li>
+          <li><figure class="review">
+            <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+            <blockquote><p>“Visited for a sports massage due to ongoing lower back issues. Rene was both very pleasant and professional and made me feel comfortable. The massage was excellent. She is extremely knowledgeable and gave excellent advice post massage…”</p></blockquote>
+            <figcaption><strong>Lee C.</strong><span>Google review</span></figcaption>
+          </figure></li>
+          <li><figure class="review">
+            <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+            <blockquote><p>“…Been to previous masseuses and Rene has really stood out for me, she goes above and beyond to provide an excellent service. Her expertise and knowledge was outstanding…”</p></blockquote>
+            <figcaption><strong>Keira B.</strong><span>Google review</span></figcaption>
+          </figure></li>
+          <li><figure class="review">
+            <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+            <blockquote><p>“Rene went through questions and an assesment with me before the massage was started, and she then did a great job of helping to ease the problems that I came to her with. Rene has a great relaxing space that she works in…”</p></blockquote>
+            <figcaption><strong>Mathew G.</strong><span>Google review</span></figcaption>
+          </figure></li>
+          <li><figure class="review">
+            <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+            <blockquote><p>“…She really knows her stuff and was able to give me some exercises to help with my injury too. Great sports massage, best I've had…”</p></blockquote>
+            <figcaption><strong>Katie H.</strong><span>Google review</span></figcaption>
+          </figure></li>
+          <li><figure class="review">
+            <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+            <blockquote><p>“The Full body MOT treatment I had from Rene was absolutely spot on. I felt very comfortable and relaxed the whole time and the intensity was exactly what I needed. I feel revitalised and like a new person…”</p></blockquote>
+            <figcaption><strong>Georgina P.</strong><span>Google review</span></figcaption>
+          </figure></li>
+          <li><figure class="review">
+            <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+            <blockquote><p>“First appointment with Rene and had a great sports massage. Rene was friendly, professional, and took the time to understand my aches and pains. Would highly recommend.”</p></blockquote>
+            <figcaption><strong>Will M.</strong><span>Google review</span></figcaption>
+          </figure></li>
+        </ul>
+        <div class="rail__foot">
+          <p>Also rated 5.0 on Fresha, from about 700 reviews.</p>
+          <div class="rail__nav">
+            <button class="rail__btn" type="button" data-rail="-1" aria-label="Previous reviews" aria-controls="rail"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg></button>
+            <button class="rail__btn" type="button" data-rail="1" aria-label="Next reviews" aria-controls="rail"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How a session runs -->
+  <section class="section" id="session" aria-labelledby="session-title">
+    <div class="wrap session__grid">
+      <header class="session__head reveal">
+        <p class="eyebrow">A session with Rene</p>
+        <h2 id="session-title">Three things clients write about, review after review.</h2>
+        <p class="soft measure">Whether they came in with a running strain, a sore neck and shoulder or ongoing lower back trouble, the story tends to go the same way.</p>
+      </header>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step__num" aria-hidden="true">01</span>
+          <h3>Questions and a posture check</h3>
+          <p>Before you get on the table, Rene asks where the problem is and looks at how you stand.</p>
+          <blockquote><p>“…took the time to really get an idea of problem areas, and also checked my posture.”</p><footer>Jamie B., Google review</footer></blockquote>
+        </li>
+        <li class="step reveal">
+          <span class="step__num" aria-hidden="true">02</span>
+          <h3>Pressure pitched to you</h3>
+          <p>Clients describe the pressure as firm, but not painful.</p>
+          <blockquote><p>“…the intensity was exactly what I needed.”</p><footer>Georgina P., Google review</footer></blockquote>
+        </li>
+        <li class="step reveal">
+          <span class="step__num" aria-hidden="true">03</span>
+          <h3>Stretches to take home</h3>
+          <p>You leave knowing what to do next, and what to expect in the days after.</p>
+          <blockquote><p>“…gave me stretches and posture tips to help afterwards too.”</p><footer>Rosie H., Google review</footer></blockquote>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Treatments -->
+  <section class="treatments section" id="treatments" aria-labelledby="treat-title">
+    <div class="wrap treat__grid">
+      <div class="treat__head">
+        <div class="reveal" style="display:grid;gap:var(--space-4)">
+          <p class="eyebrow">Treatments &amp; prices</p>
+          <h2 id="treat-title">From a <span class="nowrap">45-minute</span> sport massage to a <span class="nowrap">two-hour</span> Full Body&nbsp;MOT.</h2>
+          <p class="soft">Prices and session lengths as listed on Rene’s Fresha page, where you can pick a time.</p>
+        </div>
+        <figure class="treat__photo reveal">
+          <div class="frame"><img src="assets/photos/photo-06.jpg" width="738" height="1600" loading="lazy" decoding="async" alt="Four dry cupping cups placed down the back of a client’s calf on the massage table"></div>
+          <figcaption>Dry cupping on the calf. Cupping comes up again and again in Rene’s reviews.</figcaption>
+        </figure>
+      </div>
+
+      <div class="treat__list">
+        <ul class="prices">
+          <li class="price reveal">
+            <h3>Sport Massage</h3>
+            <p class="price__dur"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>45 min – 2 hr</p>
+            <p class="price__cost"><small>from</small>£50</p>
+          </li>
+          <li class="price reveal">
+            <h3>Sport Massage and Cupping</h3>
+            <p class="price__dur"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>1 – 2 hr</p>
+            <p class="price__cost"><small>from</small>£65</p>
+          </li>
+          <li class="price reveal">
+            <h3>Full Body MOT</h3>
+            <p class="price__dur"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>1 hr 30 min – 2 hr</p>
+            <p class="price__cost"><small>from</small>£90</p>
+            <p class="price__quote">“…absolutely spot on.” <span>Georgina P.</span></p>
+          </li>
+          <li class="price reveal">
+            <h3>Hot Stone Massage</h3>
+            <p class="price__dur"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>1 – 2 hr</p>
+            <p class="price__cost"><small>from</small>£65</p>
+          </li>
+          <li class="price reveal">
+            <h3>Manual Lymphatic Drainage</h3>
+            <p class="price__dur"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>1 hr</p>
+            <p class="price__cost">£60</p>
+          </li>
+          <li class="price reveal">
+            <h3>Pregnancy Massage</h3>
+            <p class="price__dur"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>1 hr</p>
+            <p class="price__cost">£60</p>
+          </li>
+          <li class="price reveal">
+            <h3>Natural Lift Facial Massage</h3>
+            <p class="price__dur"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>45 min</p>
+            <p class="price__cost">£50</p>
+          </li>
+        </ul>
+        <div class="treat__foot">
+          <div class="techniques reveal">
+            <h3>Techniques Rene uses</h3>
+            <ul class="tags">
+              <li>Pre- and post-event massage</li>
+              <li>Trigger point therapy</li>
+              <li>Dry cupping</li>
+              <li>Soft tissue release</li>
+              <li>Myofascial release</li>
+            </ul>
+          </div>
+          <a class="btn btn--primary" href="https://www.fresha.com/a/rene-taylor-harrogate-uk-49-electric-avenue-mpnyfnnc" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>See free times on Fresha</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rene & the studio -->
+  <section class="section" id="studio" aria-labelledby="studio-title">
+    <div class="wrap studio__grid">
+      <figure class="studio__photo reveal">
+        <div class="frame"><img src="assets/photos/photo-01.jpg" width="1600" height="1200" loading="lazy" decoding="async" alt="The treatment room at RT Sport Massage: a height-adjustable massage table with a navy blanket under a sloping ceiling, towels and a bowl of stones at the head"></div>
+      </figure>
+      <div class="studio__text">
+        <div class="reveal" style="display:grid;gap:var(--space-4)">
+          <p class="eyebrow">Your therapist</p>
+          <h2 id="studio-title">Rene Taylor, Level 4 in Sport Massage Therapy.</h2>
+          <p class="soft">RT Sport Massage is run by Rene from her studio at 49 Electric Avenue, set up around a height-adjustable massage table. Reviewers describe the room as welcoming and relaxing, and notice the attention to detail.</p>
+        </div>
+        <ul class="quals reveal" aria-label="Qualifications">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>VTCT Level 3 in Sport Massage Therapy</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Level 4 in Sport Massage Therapy</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Cupping Therapy</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Advanced Massage Therapy</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Lymphatic Drainage Massage</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Hot Stone Massage</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Fully insured</li>
+        </ul>
+        <div class="fresha reveal">
+          <p class="fresha__num">5.0</p>
+          <p>On Fresha too, from about 700 reviews since Rene started taking bookings there in February 2022.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gift vouchers -->
+  <section class="vouchers section" id="vouchers" aria-labelledby="vouchers-title">
+    <div class="wrap voucher__grid">
+      <figure class="voucher__photo reveal">
+        <div class="frame"><img src="assets/photos/photo-04.jpg" width="738" height="1600" loading="lazy" decoding="async" alt="A navy RT Sport Massage gift voucher on a shelf beside a candle and a small potted tree"></div>
+      </figure>
+      <div class="voucher__text reveal">
+        <p class="eyebrow">Gift vouchers</p>
+        <h2 id="vouchers-title">Give someone an hour on Rene’s table.</h2>
+        <p class="soft measure">Gift vouchers and treatment packages are sold through Rene’s Fresha page, next to her booking calendar.</p>
+        <a class="btn btn--primary" href="https://www.fresha.com/a/rene-taylor-harrogate-uk-49-electric-avenue-mpnyfnnc" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-gift"/></svg>Buy a voucher on Fresha</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section class="section" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div class="visit__head reveal">
+        <div style="display:grid;gap:var(--space-4)">
+          <p class="eyebrow">Hours &amp; location</p>
+          <h2 id="visit-title">49 Electric Avenue, HG1&nbsp;2BB.</h2>
+        </div>
+        <p class="soft">Late appointments until 8:30 pm on Mondays, Wednesdays and Thursdays. Closed at weekends.</p>
+      </div>
+      <div class="visit__grid">
+        <div class="visit__info">
+          <div class="hours reveal">
+            <div class="hours__top">
+              <h3>Opening hours</h3>
+              <p class="status" data-status hidden></p>
+            </div>
+            <table>
+              <caption class="sr-only">Opening hours, Monday to Sunday</caption>
+              <tbody>
+                <tr data-day="monday"><th scope="row">Monday</th><td>9:15 am – 8:30 pm</td></tr>
+                <tr data-day="tuesday"><th scope="row">Tuesday</th><td>9:15 am – 3 pm</td></tr>
+                <tr data-day="wednesday"><th scope="row">Wednesday</th><td>9:15 am – 8:30 pm</td></tr>
+                <tr data-day="thursday"><th scope="row">Thursday</th><td>9:15 am – 8:30 pm</td></tr>
+                <tr data-day="friday"><th scope="row">Friday</th><td>9:15 am – 6 pm</td></tr>
+                <tr data-day="saturday" class="is-closed"><th scope="row">Saturday</th><td>Closed</td></tr>
+                <tr data-day="sunday" class="is-closed"><th scope="row">Sunday</th><td>Closed</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="addr reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            <p><strong>RT Sport Massage</strong><br>49 Electric Ave, Harrogate, HG1 2BB</p>
+          </div>
+          <div class="visit__actions reveal">
+            <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=RT%20Sport%20Massage%2C%2049%20Electric%20Ave%2C%20Harrogate%2C%20HG1%202BB" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg>Get directions</a>
+            <a class="btn btn--ghost" href="tel:+447961586984"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>07961 586984</a>
+          </div>
+        </div>
+        <div class="map reveal">
+          <div class="map__frame">
+            <iframe src="https://www.google.com/maps?q=RT%20Sport%20Massage%2C%2049%20Electric%20Ave%2C%20Harrogate%2C%20HG1%202BB&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing RT Sport Massage at 49 Electric Ave, Harrogate" allowfullscreen></iframe>
+          </div>
+          <p>Map not loading? <a href="https://www.google.com/maps/place/?q=place_id:ChIJFXNTvKVTeUgReavKoN5ZwLw" target="_blank" rel="noopener">Open RT Sport Massage in Google Maps</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking close -->
+  <section class="book section on-dark" id="book" aria-labelledby="book-title">
+    <div class="wrap book__grid">
+      <div class="reveal" style="display:grid;gap:var(--space-5)">
+        <p class="eyebrow">Book a session</p>
+        <h2 id="book-title">Tell Rene <em>where it hurts.</em></h2>
+        <p class="book__lead">Pick a time on Fresha, or call or text first if you would rather talk it through.</p>
+      </div>
+      <div class="book__actions reveal">
+        <a class="book__phone" href="tel:+447961586984"><small>Call or text Rene</small>07961 586984</a>
+        <a class="btn btn--gold" href="https://www.fresha.com/a/rene-taylor-harrogate-uk-49-electric-avenue-mpnyfnnc" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Book online</a>
+        <a class="btn btn--light" href="sms:+447961586984?&amp;body=Hello%20Rene%2C%20I%20would%20like%20to%20book%20a%20sports%20massage.%20When%20is%20your%20next%20free%20appointment%3F%20Thank%20you."><svg class="icon" aria-hidden="true"><use href="#i-msg"/></svg>Send a text</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <a class="brand" href="#top" aria-label="RT Sport Massage, back to top">
+        <span class="brand__mark" aria-hidden="true">RT</span>
+        <span class="brand__name">RT Sport Massage<small>Sports massage therapist in Harrogate</small></span>
+      </a>
+      <div class="footer__contact">
+        <span>49 Electric Ave, Harrogate, HG1 2BB</span>
+        <a href="tel:+447961586984">07961 586984</a>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <ul>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#studio">About Rene</a></li>
+          <li><a href="#vouchers">Gift vouchers</a></li>
+          <li><a href="#visit">Hours &amp; map</a></li>
+          <li><a href="https://www.fresha.com/a/rene-taylor-harrogate-uk-49-electric-avenue-mpnyfnnc" target="_blank" rel="noopener">Book on Fresha</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__base">
+      <span>© <span data-year>2026</span> RT Sport Massage</span>
+      <span>Rene Taylor · Sport massage therapist</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Quick contact">
+  <a href="tel:+447961586984"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+  <a href="sms:+447961586984?&amp;body=Hello%20Rene%2C%20I%20would%20like%20to%20book%20a%20sports%20massage.%20When%20is%20your%20next%20free%20appointment%3F%20Thank%20you."><svg class="icon" aria-hidden="true"><use href="#i-msg"/></svg>Text</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=RT%20Sport%20Massage%2C%2049%20Electric%20Ave%2C%20Harrogate%2C%20HG1%202BB" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg>Directions</a>
+</nav>
+
+<script>
+(function () {
+  var doc = document.documentElement;
+  doc.classList.add('js');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Year */
+  document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+
+  /* Header state */
+  var header = document.getElementById('header');
+  var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  /* Menu */
+  var btn = document.querySelector('.menu-btn'), menu = document.getElementById('menu');
+  function setMenu(open) {
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    menu.classList.toggle('is-open', open);
+    document.body.classList.toggle('menu-open', open);
+    if (open) { var f = menu.querySelector('a'); if (f) f.focus(); }
+  }
+  btn.addEventListener('click', function () { setMenu(btn.getAttribute('aria-expanded') !== 'true'); });
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { setMenu(false); btn.focus(); }
+  });
+  window.matchMedia('(min-width: 960px)').addEventListener('change', function (m) { if (m.matches) setMenu(false); });
+
+  /* Opening hours: today + live status (Europe/London time) */
+  var HOURS = {
+    monday: '9:15 am–8:30 pm', tuesday: '9:15 am–3 pm', wednesday: '9:15 am–8:30 pm',
+    thursday: '9:15 am–8:30 pm', friday: '9:15 am–6 pm', saturday: 'Closed', sunday: 'Closed'
+  };
+  var DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+  var LABEL = { sunday: 'Sunday', monday: 'Monday', tuesday: 'Tuesday', wednesday: 'Wednesday', thursday: 'Thursday', friday: 'Friday', saturday: 'Saturday' };
+
+  function parseTime(s) {
+    s = s.trim().toLowerCase().replace(/\./g, '');
+    if (/noon|midday/.test(s)) return { m: 720, mer: 'pm' };
+    if (/midnight/.test(s)) return { m: 1440, mer: 'am' };
+    var t = s.match(/(\d{1,2})(?:\s*[:h]\s*(\d{2}))?\s*(am|pm)?/);
+    if (!t) return null;
+    var h = +t[1], mi = +(t[2] || 0), mer = t[3] || '';
+    if (mer === 'pm' && h < 12) h += 12;
+    if (mer === 'am' && h === 12) h = 0;
+    return { m: h * 60 + mi, mer: mer };
+  }
+  function ranges(str) {
+    if (!str || /closed|fermé|ferme/i.test(str)) return [];
+    if (/24\s*(h|hours)|open 24/i.test(str)) return [[0, 1440]];
+    var out = [];
+    str.split(/[,;]/).forEach(function (part) {
+      var p = part.split(/\s*[–—-]\s*|\s+to\s+/i);
+      if (p.length < 2) return;
+      var a = parseTime(p[0]), b = parseTime(p[1]);
+      if (!a || !b) return;
+      var start = a.m, end = b.m;
+      if (!a.mer && b.mer === 'pm' && start + 720 <= end) start += 720;
+      if (end <= start) end += 1440;
+      out.push([start, end]);
+    });
+    return out;
+  }
+  function fmt(m) {
+    m = ((m % 1440) + 1440) % 1440;
+    var h = Math.floor(m / 60), mi = m % 60, suf = h < 12 ? 'am' : 'pm';
+    if (m === 0) return 'midnight';
+    if (m === 720) return 'noon';
+    return (h % 12 || 12) + (mi ? ':' + (mi < 10 ? '0' : '') + mi : '') + ' ' + suf;
+  }
+  function now() {
+    try {
+      var parts = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', weekday: 'long', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(new Date());
+      var get = function (t) { for (var i = 0; i < parts.length; i++) if (parts[i].type === t) return parts[i].value; return ''; };
+      var d = DAYS.indexOf(get('weekday').toLowerCase());
+      if (d > -1) return { day: d, min: (+get('hour') % 24) * 60 + +get('minute') };
+    } catch (e) {}
+    var n = new Date();
+    return { day: n.getDay(), min: n.getHours() * 60 + n.getMinutes() };
+  }
+  function status(t) {
+    var today = ranges(HOURS[DAYS[t.day]]), yest = ranges(HOURS[DAYS[(t.day + 6) % 7]]), i, r;
+    for (i = 0; i < yest.length; i++) if (yest[i][1] > 1440 && t.min < yest[i][1] - 1440) return { open: true, text: 'until ' + fmt(yest[i][1]) };
+    for (i = 0; i < today.length; i++) {
+      r = today[i];
+      if (t.min >= r[0] && t.min < r[1]) return r[1] - r[0] >= 1440 ? { open: true, text: '24 hours' } : { open: true, text: 'until ' + fmt(r[1]) };
+    }
+    for (i = 0; i < today.length; i++) if (today[i][0] > t.min) return { open: false, text: 'opens at ' + fmt(today[i][0]) };
+    for (var k = 1; k <= 7; k++) {
+      var key = DAYS[(t.day + k) % 7], next = ranges(HOURS[key]);
+      if (next.length) return { open: false, text: 'opens ' + (k === 1 ? 'tomorrow' : LABEL[key]) + ' at ' + fmt(next[0][0]) };
+    }
+    return null;
+  }
+  var t = now(), st = status(t);
+  var row = document.querySelector('tr[data-day="' + DAYS[t.day] + '"]');
+  if (row) { row.classList.add('is-today'); row.setAttribute('aria-current', 'date'); }
+  if (st) document.querySelectorAll('[data-status]').forEach(function (el) {
+    el.innerHTML = '<span><strong>' + (st.open ? 'Open now' : 'Closed') + '</strong> · ' + st.text + '</span>';
+    el.setAttribute('data-open', st.open);
+    el.hidden = false;
+  });
+
+  /* Review rail */
+  var rail = document.getElementById('rail');
+  var railBtns = document.querySelectorAll('[data-rail]');
+  function railState() {
+    var max = rail.scrollWidth - rail.clientWidth - 2;
+    railBtns[0].disabled = rail.scrollLeft <= 2;
+    railBtns[1].disabled = rail.scrollLeft >= max;
+  }
+  railBtns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var card = rail.querySelector('li');
+      var step = card ? card.getBoundingClientRect().width + 16 : rail.clientWidth * .8;
+      rail.scrollBy({ left: +b.getAttribute('data-rail') * step, behavior: reduce ? 'auto' : 'smooth' });
+    });
+  });
+  rail.addEventListener('scroll', railState, { passive: true });
+  window.addEventListener('resize', railState); railState();
+
+  /* Reveal + count-up */
+  var reveals = document.querySelectorAll('.reveal');
+  var counter = document.querySelector('[data-count]');
+  function countUp(el) {
+    var target = +el.getAttribute('data-count'), t0 = null, dur = 1400;
+    function tick(ts) {
+      if (!t0) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * e);
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  if (!('IntersectionObserver' in window) || reduce) {
+    reveals.forEach(function (el) { el.classList.add('is-in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      en.target.classList.add('is-in');
+      io.unobserve(en.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.01 });
+  reveals.forEach(function (el) { io.observe(el); });
+  if (counter) {
+    var co = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) { countUp(counter); co.disconnect(); }
+    }, { threshold: 0.6 });
+    co.observe(counter);
+  }
+})();
+</script>
+<!--sf:preview--><div style="padding:18px 16px;font:13px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;background:#0f0f10;color:#a3a3a8">Preview made by Aymen Jallouli for RT Sport Massage: this is not yet the business's official website.</div><!--/sf:preview-->
+<!--sf:track--><script>(function(){try{var q=new URLSearchParams(location.search),r=q.get('r')||sessionStorage.getItem('sf_r');if(!r)return;sessionStorage.setItem('sf_r',r);navigator.sendBeacon("https://track.aymenjallouli.dev/t"+'?r='+encodeURIComponent(r)+'&p='+encodeURIComponent(location.pathname));}catch(e){}})();</script><!--/sf:track-->
+</body>
+</html>
